@@ -8,15 +8,14 @@
 
 import { mkdirSync, writeFileSync } from "node:fs";
 
-// Revised line: the draft buried its punch mid-sentence and then fizzled.
-// This version front-loads the setup (four billion years on the job,
-// all three provocations named: wishes, howls, 2 a.m. promises), saves
-// the grievance for the middle, and lands the whole comeback on a
-// one-word kicker at the very end, so the turn arrives before the line
-// ends. The Moon is wry, old, and tired of being wished upon — and,
-// after all that listening, nobody ever wished it anything back.
+// Round 2 line: round 1 only grumbled about ingratitude ("Rude.").
+// This one escalates: the Moon doesn't complain, it resigns — and it
+// takes the tides with it. Same setup (wishes, howls, 2 a.m. promises,
+// four billion years), but the payoff is an action with real stakes,
+// grounded in a true fact (the Moon recedes ~3.8 cm a year), so the
+// final clause reframes the whole relationship in one read.
 const LINE =
-  "Four billion years of wishes, howls, and 2 a.m. promises — and the best any of you ever did for me was plant a flag and leave footprints. Rude.";
+  "I heard every wish, every howl, every 2 a.m. promise for four billion years — and my answer is: I'm leaving, three point eight centimeters a year, and I'm taking the tides with me.";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", LINE + "\n", "utf8");
